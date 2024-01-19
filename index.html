@@ -6,141 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
+    <script src="./assets/script.js" defer></script>
   </head>
   <body>
-    <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
       <h2>✨ Open the Console to See What's Happening ✨</h2>
-    </header>
-    <main>
-      <section class="card" id="html-section">
-        <h2>HTML</h2>
-        <ul>
-          <li>Enter your HTML notes here</li>
-          <li>Hypertext Markup Language (HTML) is used to create the structure of a webpage</li>
-          <li>HTML is made up of elements which provide the content and basic framework</li>
-          <li>An element is a type of content on a webpage</li>
-          <li>HTML elements are usually composed of an opening and closing tag "<>," which contain everything we wish to include in the element " </li>
-        </ul>
-      </section>
-   
-      <section class="card" id="css-section">
-        <h2>CSS</h2>
-        <ul>
-          <li>Enter your CSS notes here</li>
-          <li>Cascading Style Sheets (CSS) is a programming language used developers to define how webpage content is presented to users</li>
-          <li>CSS defines the colors, aesthetics, visual layout, and organization of a webpage</li>
-          <li>CSS is used to define style rules for specific elements of an HTML page and format them using a wide range of style options</li>
-          <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet</li>
-          <li>Inline CSS</li>
-            <ul>
-              <li>An inline CSS is used to apply a unique style to a single HTML element</li>
-              <li>An inline CSS uses the style attribute of an HTML element</li>
-              <li>Useful for quick and permanent changes but less flexible than external and internal style sheets</li>
-              <li>Inline style must be edited individually whenever a design change is made</li>
-            </ul>
-          <li>Internal CSS style sheet</li>
-            <ul>
-              <li>An internal CSS is used to define a style for a single HTML page.</li>
-              <li>It embeds an entire stylesheet directly in the HTML file using a "&lt;style&gt;" element in the "&lt;head&gt;" element</li>
-              <li>It contains CSS rules for the webpage in the head section of the HTML file</li>
-              <li>The rules only apply to that page, and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code</li>
-              <li>A single change to the CSS rule will apply to all tagged page elements</li>
-            </ul>
-          <li>External CSS</li>
-            <ul>
-              <li>This is the most common and prefered way to style a webpage</li>
-              <li>An external style allows developers to keep all their CSS rules in a separate file, which makes design changes easier</li>
-              <li>When using an external style sheet, we link the file using a "&lt;link&gt;" element placed in the HTML's "&lt;head&gt;" </li>
-              <li>The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.</li>
-              <li>Seperating code into different files based on use is known as separation of concerns. It is based on the idea that each section of code should have its own responsibility</li>
-            </ul>
-        </ul>
-      </section>
-   
-      <section class="card" id="git-section">
-        <h2>Git</h2>
-        <ul>
-          <li>Enter your Git notes here</li>
-          <li>Git is a version control system that allows you to manage and keep track of each version of a project</li>
-            <ul>
-              <li>Every time a version of our work is saved using version control, a unique identifier called an SHA, or hash, allows you to keep a record of the specific changes committed</li>
-            </ul>
-          <li>We access Git using the command line</li>
-            <ul>
-              <li>Unlike bash commands, Git commands always start with “git” and are used to save and track versions of our code</li>
-            </ul>
-          <li>Git commands can be used to initiate (create) a repository, add code to the repository, and view different versions of our code, which are each stored in a unique commit</li>
-            <ul>
-              <li>You can find a list of the most important and commonly used Git commands here: <a href="https://git-scm.com/docs" target="_blank">Git Command Cheat Sheet </a> </li>
-            </ul>
-          <li>While git can track changes locally on our computer, collaborating with others requires a tool called GitHub</li>
-            <ul>
-              <li>GitHub is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely.</li>
-            </ul>
-          <li>Developers use repositories to store the following:
-            <ul>
-              <li>Files that contain code</li>
-              <li>Files that contain other information about the code, like a README file</li>
-              <li>The version history for all of the files in the repository</li>
-            </ul>
-          <li>When making changes locally, it is important to keep the local branch in sync with the remote repository/li>
-          <li>To keep the two in sync, we use the GitHub workflow</li>
-          <li>A branch is a copy or version of the code that can be worked on independently in isolation so development changes do not disrupt other team members who are also working on the code and testing their solutions</li>
-          <li>Every GitHub repository starts with a default branch called main</li>
-            <ul>
-              <li>From the main branch, we can create new branches called feature branches where changes can be made without disrupting the main branch</li>
-              <li>In a feature branch, all changes made should include a commit message that is descriptive of what changed in the code</li>
-            </ul>
-          <li>Changes made via feature branches are only integrated after merging into the main branch</li>
-            <ul>
-              <li>A pull request, or PR, is used to merge into the main branch</li>
-            </ul>
-          <li>You can read more about the different stages of GitHub flow and branching here: <a href="https://docs.github.com/en/get-started/quickstart/github-flow" target="_blank">GitHub Docs on GitHub flow </a>  </li>
-        </ul>
-      </section>
-   
-      <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
-        <ul>
-          <li>Enter your JavaScript notes here</li>
-          <li>JavaScript (JS) is a high-level dynamic programming language that allows users to interact with websites</li>
-          <li>Using JavaScript, you can power your websites with effects, interactivity, data communication, and much more</li>
-          <li>JavaScript takes a static HTML/CSS webpage and makes it interactive</li>
-          <li>Variables are containers that allow us to store data in our code</li>
-            <ul>
-              <li>To declare a variable in JavaScript, we us the var key word, followed by the variable name</li>
-              <li>The variable name (identifiers) should be unique as it references the information stored in the variable</li>
-              <li>After declaring and naming a variable, the assignment operator = is used to assign the specific data that we intend to store in our variable</li>
-            </ul>
-          <li>A JavaScript variable can hold many different types of data that can be categorized into two main groups: primitive types and object types</li>
-          <li>Primitive Types:</li>
-            <ul>
-              <li>String - Represents sequences of characters ("How are you?") </li>
-              <li>Number - Represents numeric values. These values can either be a integerNumber (1, 10 100) or a floatingPointNumber (3.14, 0.50. 9.99)</li>
-              <li>Boolean - Represents a logical value, either true or false</li>
-              <li>Undefined - Represents an unassigned or undefined value</li>
-              <li>Null - Represents an empty value, similar to undefined, but is explicitly assigned to indicate the intentional absence of any object value  </li>
-            </ul>
-          <li>Object Types:</li>
-            <ul>
-              <li>Object - Represents a collection of key-value pairs, where an identifier or key is paired with its corresponding value</li>
-              <li>Array - Represents an ordered list of values</li>
-              <li>Function - Represents a reusable block of code</li>
-            </ul>
-          <li>You can read more about JavaScript basics and data types below:</li>
-            <ul>
-              <li> <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">MDN Web Docs on JavaScript basics </a> </li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">MDN Web Docs on JavaScript data types </a> </li>
-            </ul>
-        </ul>
-      </section>
-    </main>
+      <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                HTML
+            </div>
+        <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+                <ul>
+                    <li>Hypertext Markup Language (HTML) is used to create the structure of a webpage</li>
+                    <li>HTML is made up of elements which provide the content and basic framework</li>
+                    <li>An element is a type of content on a webpage</li>
+                    <li>HTML elements are usually composed of an opening and closing tag "<>," which contain everything we wish to include in the element " </li>
+                  </ul>
+            </div>
+        </div>
 
-    <footer>
-      <p>I can code!</p>
-    </footer>
-    <script src="./assets/script.js"></script>
-  </body>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                CSS
+            </div>
+        <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+                <ul>
+                    <li>Cascading Style Sheets (CSS) is a programming language used developers to define how webpage content is presented to users</li>
+                    <li>CSS defines the colors, aesthetics, visual layout, and organization of a webpage</li>
+                    <li>CSS is used to define style rules for specific elements of an HTML page and format them using a wide range of style options</li>
+                    <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet</li>
+                    <li>Inline CSS</li>
+                      <ul>
+                        <li>An inline CSS is used to apply a unique style to a single HTML element</li>
+                        <li>An inline CSS uses the style attribute of an HTML element</li>
+                        <li>Useful for quick and permanent changes but less flexible than external and internal style sheets</li>
+                        <li>Inline style must be edited individually whenever a design change is made</li>
+                      </ul>
+                    <li>Internal CSS style sheet</li>
+                      <ul>
+                        <li>An internal CSS is used to define a style for a single HTML page.</li>
+                        <li>It embeds an entire stylesheet directly in the HTML file using a "&lt;style&gt;" element in the "&lt;head&gt;" element</li>
+                        <li>It contains CSS rules for the webpage in the head section of the HTML file</li>
+                        <li>The rules only apply to that page, and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code</li>
+                        <li>A single change to the CSS rule will apply to all tagged page elements</li>
+                      </ul>
+                    <li>External CSS</li>
+                      <ul>
+                        <li>This is the most common and prefered way to style a webpage</li>
+                        <li>An external style allows developers to keep all their CSS rules in a separate file, which makes design changes easier</li>
+                        <li>When using an external style sheet, we link the file using a "&lt;link&gt;" element placed in the HTML's "&lt;head&gt;" </li>
+                        <li>The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.</li>
+                        <li>Seperating code into different files based on use is known as separation of concerns. It is based on the idea that each section of code should have its own responsibility</li>
+                      </ul>
+                  </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                Git
+            </div>
+        <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+                <ul>
+                    <li>Git is a version control system that allows you to manage and keep track of each version of a project</li>
+                      <ul>
+                        <li>Every time a version of our work is saved using version control, a unique identifier called an SHA, or hash, allows you to keep a record of the specific changes committed</li>
+                      </ul>
+                    <li>We access Git using the command line</li>
+                      <ul>
+                        <li>Unlike bash commands, Git commands always start with “git” and are used to save and track versions of our code</li>
+                      </ul>
+                    <li>Git commands can be used to initiate (create) a repository, add code to the repository, and view different versions of our code, which are each stored in a unique commit</li>
+                      <ul>
+                        <li>You can find a list of the most important and commonly used Git commands here: <a href="https://git-scm.com/docs" target="_blank">Git Command Cheat Sheet </a> </li>
+                      </ul>
+                    <li>While git can track changes locally on our computer, collaborating with others requires a tool called GitHub</li>
+                      <ul>
+                        <li>GitHub is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely.</li>
+                      </ul>
+                    <li>Developers use repositories to store the following:
+                      <ul>
+                        <li>Files that contain code</li>
+                        <li>Files that contain other information about the code, like a README file</li>
+                        <li>The version history for all of the files in the repository</li>
+                      </ul>
+                    <li>When making changes locally, it is important to keep the local branch in sync with the remote repository/li>
+                    <li>To keep the two in sync, we use the GitHub workflow</li>
+                    <li>A branch is a copy or version of the code that can be worked on independently in isolation so development changes do not disrupt other team members who are also working on the code and testing their solutions</li>
+                    <li>Every GitHub repository starts with a default branch called main</li>
+                      <ul>
+                        <li>From the main branch, we can create new branches called feature branches where changes can be made without disrupting the main branch</li>
+                        <li>In a feature branch, all changes made should include a commit message that is descriptive of what changed in the code</li>
+                      </ul>
+                    <li>Changes made via feature branches are only integrated after merging into the main branch</li>
+                      <ul>
+                        <li>A pull request, or PR, is used to merge into the main branch</li>
+                      </ul>
+                    <li>You can read more about the different stages of GitHub flow and branching here: <a href="https://docs.github.com/en/get-started/quickstart/github-flow" target="_blank">GitHub Docs on GitHub flow </a>  </li>
+                  </ul>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                JavaScript
+            </div>
+        <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+                <ul>
+                    <li>JavaScript (JS) is a high-level dynamic programming language that allows users to interact with websites</li>
+                    <li>Using JavaScript, you can power your websites with effects, interactivity, data communication, and much more</li>
+                    <li>JavaScript takes a static HTML/CSS webpage and makes it interactive</li>
+                    <li>Variables are containers that allow us to store data in our code</li>
+                    <li>To declare a variable in JavaScript, we us the var key word, followed by the variable name</li>
+                    <li>The variable name (identifiers) should be unique as it references the information stored in the variable</li>
+                    <li>After declaring and naming a variable, the assignment operator = is used to assign the specific data that we intend to store in our variable</li>
+                    <li>A JavaScript variable can hold many different types of data that can be categorized into two main groups: primitive types and object types</li>
+                    <li>String - Represents sequences of characters ("How are you?") </li>
+                    <li>Number - Represents numeric values. These values can either be a integerNumber (1, 10 100) or a floatingPointNumber (3.14, 0.50. 9.99)</li>
+                    <li>Boolean - Represents a logical value, either true or false</li>
+                    <li>Undefined - Represents an unassigned or undefined value</li>
+                    <li>Null - Represents an empty value, similar to undefined, but is explicitly assigned to indicate the intentional absence of any object value  </li>
+                    <li>Object Types:</li>
+                    <li>Object - Represents a collection of key-value pairs, where an identifier or key is paired with its corresponding value</li>
+                    <li>Array - Represents an ordered list of values</li>
+                    <li>Function - Represents a reusable block of code</li>
+                    <li>You can read more about JavaScript basics and data types below:</li>
+                    <li> <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">MDN Web Docs on JavaScript basics </a> </li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">MDN Web Docs on JavaScript data types </a> </li>
+                      </ul>
+                  </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>
